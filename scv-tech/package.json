@@ -8,7 +8,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-writer": "^1.2.0",
+    "vue3-perfect-scrollbar": "^1.6.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
