@@ -1,16 +1,11 @@
 <template>
-  <div class="flex w-full">
-    <div>
+  <div class="flex w-full px-20">
+    <div class="pl-20">
       <div class="flex flex-col mr-10 max-w-[35rem]">
         <span class="text-xl">WELCOME TO MY WORLD</span>
         <span class="text-[40px]"
           >Hi, I'm <span class="text-[#FF014F]">Vasile Sebastian Costinel</span>
         </span>
-        <VueWriter
-          :array="['Software Developer.', 'Professional Programmer.']"
-          class="text-[40px]"
-          >a
-        </VueWriter>
         <span class="text-lg mt-10"
           >Quick learner and flexible person with over 5+ years experience.
         </span>
