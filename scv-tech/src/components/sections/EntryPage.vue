@@ -9,7 +9,7 @@
         <VueWriter
           :array="['Software Developer.', 'Professional Programmer.']"
           class="text-[40px]"
-        >a
+          >a
         </VueWriter>
         <span class="text-lg mt-10"
           >Quick learner and flexible person with over 5+ years experience.
