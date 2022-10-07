@@ -15,8 +15,10 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=PT+Serif&display=swap' }
+    ],
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -25,6 +27,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src: '~/plugins/vue-typer.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,6 +35,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify',
+
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
@@ -42,5 +47,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  vuetify: {
+    theme: { dark: true },
+    customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
   }
 }
